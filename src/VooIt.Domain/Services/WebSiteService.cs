@@ -115,19 +115,19 @@ public class WebSiteService : IWebSiteService
 
     private void Validate(string id, RequestModel entity)
     {
-        //if (!string.Equals(id, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
-        //{
-        //    throw new DomainException("invalid operation");
-        //}
+        if (!string.Equals(id, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new DomainException("invalid operation");
+        }
 
-        //if (!string.Equals(id, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
-        //{
-        //    throw new DomainException("invalid operation");
-        //}
+        if (!string.Equals(id, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new DomainException("invalid operation");
+        }
 
-        //if (!string.Equals(id, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
-        //{
-        //    throw new DomainException("invalid operation");
-        //}
+        if (!string.Equals(id, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new DomainException("invalid operation");
+        }
     }
 }

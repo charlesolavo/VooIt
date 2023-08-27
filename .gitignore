@@ -3,3 +3,7 @@
 ################################################################################
 
 /src/VooIt.Api/bin/Debug/net7.0/VooIt.Domain.pdb
+/src/VooIt.Api/obj/Container/ContainerRunContext.cache
+/src/VooIt.Api/obj/Container/ContainerName.cache
+/src/VooIt.Api/obj/Container/ContainerId.cache
+/src/VooIt.Api/obj/Container/ContainerDevelopmentMode.cache
