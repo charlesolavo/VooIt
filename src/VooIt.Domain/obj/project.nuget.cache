@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "D0qhOf0Et9Pus2jG2kpnh300ZZH3fIWSPAiwBdg2FNm+xROpePVak87wlDV7GH8/V8KBs2YKP7Jn6ZeAj+dvcw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\charlesolavo\\source\\repos\\VooIT\\src\\VooIt.Domain\\VooIt.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charlesolavo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\bin\Debug\net7.0\VooIT.Common.deps.json
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\bin\Debug\net7.0\VooIT.Common.dll
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\bin\Debug\net7.0\VooIT.Common.pdb
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\bin\Debug\net7.0\VooIt.Domain.dll
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\bin\Debug\net7.0\VooIt.Domain.pdb
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.csproj.AssemblyReference.cache
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.AssemblyInfoInputs.cache
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.AssemblyInfo.cs
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.csproj.CoreCompileInputs.cache
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.csproj.CopyComplete
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.dll
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\refint\VooIT.Common.dll
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\VooIT.Common.pdb
+C:\Users\charlesolavo\source\repos\VooIT\src\VooIT.Common\obj\Debug\net7.0\ref\VooIT.Common.dll

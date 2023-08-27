@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Z5pw1zuVlNWRNLhcm9eAhsGEcU1fQG4UJ6joUqL6hbE=",
+  "Source": "VooIt.Api",
+  "BasePath": "_content/VooIt.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

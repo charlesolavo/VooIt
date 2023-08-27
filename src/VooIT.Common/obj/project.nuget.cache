@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qo61/tdKql80CcEjqKHayjPfiemYUx+voGQq3/7nNGb9EoTD5tdQTlCApf8w6kLKDYRxIWLJ/cssW4ET3Wtc7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\charlesolavo\\source\\repos\\VooIT\\src\\VooIT.Common\\VooIT.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charlesolavo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\charlesolavo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
