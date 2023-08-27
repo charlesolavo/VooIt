@@ -55,20 +55,26 @@ public class WebSiteService : IWebSiteService
 
         if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeader = new Entities.WebsiteHeader();
-            entity.WebsiteHeader.Id = sectionID;
+            entity.WebsiteHeader = new Entities.WebsiteHeader
+            {
+                Id = sectionID
+            };
         }
 
         if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock();
-entity.WebsiteHeroBlock.Id = sectionID;
+            entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock
+            {
+                Id = sectionID
+            };
         }
 
         if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.ServicesBlock = new Entities.ServicesBlock();
-            entity.ServicesBlock.Id = sectionID;
+            entity.ServicesBlock = new Entities.ServicesBlock
+            {
+                Id = sectionID
+            };
         }
 
         WriteContentToFile(id, entity);
@@ -91,20 +97,17 @@ entity.WebsiteHeroBlock.Id = sectionID;
 
         if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeader = new Entities.WebsiteHeader();
-            entity.WebsiteHeader.Id = sectionID;
+            entity.WebsiteHeader = request.WebsiteHeader;
         }
 
         if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock();
-entity.WebsiteHeroBlock.Id = sectionID;
+            entity.WebsiteHeroBlock = request.WebsiteHeroBlock;
         }
 
         if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.ServicesBlock = new Entities.ServicesBlock();
-            entity.ServicesBlock.Id = sectionID;
+            entity.ServicesBlock = request.ServicesBlock;
         }
 
         WriteContentToFile(id, entity);
