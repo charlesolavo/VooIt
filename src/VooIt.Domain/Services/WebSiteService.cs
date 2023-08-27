@@ -53,18 +53,18 @@ public class WebSiteService : IWebSiteService
 
         TryParse<RequestModel>(text, out var entity);
 
-        if (sectionID == entity.WebsiteHeader.Id)
+        if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.WebsiteHeader = new Entities.WebsiteHeader();
         }
 
-        if (sectionID == entity.WebsiteHeroBlock.Id)
+        if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeroBlock =   new Entities.WebsiteHeroBlock();
+            entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock();
 
         }
 
-        if (sectionID == entity.ServicesBlock.Id)
+        if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.ServicesBlock = new Entities.ServicesBlock();
         }
@@ -87,18 +87,18 @@ public class WebSiteService : IWebSiteService
 
         TryParse<RequestModel>(text, out var entity);
 
-        if (sectionID == entity.WebsiteHeader.Id)
+        if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.WebsiteHeader = request.WebsiteHeader;
         }
 
-        if (sectionID == entity.WebsiteHeroBlock.Id)
+        if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.WebsiteHeroBlock = request.WebsiteHeroBlock;
-           
+
         }
 
-        if (sectionID == entity.ServicesBlock.Id)
+        if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.ServicesBlock = request.ServicesBlock;
         }
