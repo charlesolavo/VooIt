@@ -42,22 +42,39 @@ public class WebSiteService : IWebSiteService
         throw new DomainNotFoundException("not found");
     }
 
-    public async Task Remove(string id)
+    public async Task Remove(string id, string sectionID)
     {
-        
-        var file = $@"{_basePath}{id}.json";
+        var text = GetContent(id);
 
-        if (!File.Exists(file))
+        if (string.IsNullOrWhiteSpace(text))
         {
             throw new DomainNotFoundException("not found");
         }
 
-        File.Delete(file);
+        TryParse<RequestModel>(text, out var entity);
+
+        if (sectionID == entity.WebsiteHeader.Id)
+        {
+            entity.WebsiteHeader = new Entities.WebsiteHeader();
+        }
+
+        if (sectionID == entity.WebsiteHeroBlock.Id)
+        {
+            entity.WebsiteHeroBlock =   new Entities.WebsiteHeroBlock();
+
+        }
+
+        if (sectionID == entity.ServicesBlock.Id)
+        {
+            entity.ServicesBlock = new Entities.ServicesBlock();
+        }
+
+        WriteContentToFile(id, entity);
 
         await Task.FromResult(Task.CompletedTask);
     }
 
-    public async Task Update(string id, RequestModel request)
+    public async Task Update(string id, string sectionID, RequestModel request)
     {
         Validate(id, request);
 
@@ -69,6 +86,22 @@ public class WebSiteService : IWebSiteService
         }
 
         TryParse<RequestModel>(text, out var entity);
+
+        if (sectionID == entity.WebsiteHeader.Id)
+        {
+            entity.WebsiteHeader = request.WebsiteHeader;
+        }
+
+        if (sectionID == entity.WebsiteHeroBlock.Id)
+        {
+            entity.WebsiteHeroBlock = request.WebsiteHeroBlock;
+           
+        }
+
+        if (sectionID == entity.ServicesBlock.Id)
+        {
+            entity.ServicesBlock = request.ServicesBlock;
+        }
 
         WriteContentToFile(id, entity);
 

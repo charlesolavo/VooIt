@@ -31,18 +31,18 @@ namespace VooIt.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(string id, [FromBody] RequestModel model)
+        public async Task<IActionResult> Put(string id, string sectionID, [FromBody] RequestModel model)
         {
-            await _webSiteService.Update(id, model);
+            await _webSiteService.Update(id, sectionID, model);
 
             return Ok();
 
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(string id, string sectionID)
         {
-            await _webSiteService.Remove(id);
+            await _webSiteService.Remove(id, sectionID);
 
             return Ok();
         }

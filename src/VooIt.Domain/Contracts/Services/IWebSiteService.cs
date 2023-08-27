@@ -6,9 +6,9 @@ public interface IWebSiteService
 {
     Task Create(string id, RequestModel data);
 
-    Task Update(string id, RequestModel data);
+    Task Update(string id, string sectionID, RequestModel request);
 
-    Task Remove(string id);
+    Task Remove(string id, string sectionID);
 
     Task<RequestModel> GetById(string id);
 
