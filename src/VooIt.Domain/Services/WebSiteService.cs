@@ -56,17 +56,19 @@ public class WebSiteService : IWebSiteService
         if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.WebsiteHeader = new Entities.WebsiteHeader();
+            entity.WebsiteHeader.Id = sectionID;
         }
 
         if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock();
-
+entity.WebsiteHeroBlock.Id = sectionID;
         }
 
         if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
             entity.ServicesBlock = new Entities.ServicesBlock();
+            entity.ServicesBlock.Id = sectionID;
         }
 
         WriteContentToFile(id, entity);
@@ -89,18 +91,20 @@ public class WebSiteService : IWebSiteService
 
         if (string.Equals(sectionID, entity.WebsiteHeader.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeader = request.WebsiteHeader;
+            entity.WebsiteHeader = new Entities.WebsiteHeader();
+            entity.WebsiteHeader.Id = sectionID;
         }
 
         if (string.Equals(sectionID, entity.WebsiteHeroBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.WebsiteHeroBlock = request.WebsiteHeroBlock;
-
+            entity.WebsiteHeroBlock = new Entities.WebsiteHeroBlock();
+entity.WebsiteHeroBlock.Id = sectionID;
         }
 
         if (string.Equals(sectionID, entity.ServicesBlock.Id, StringComparison.OrdinalIgnoreCase))
         {
-            entity.ServicesBlock = request.ServicesBlock;
+            entity.ServicesBlock = new Entities.ServicesBlock();
+            entity.ServicesBlock.Id = sectionID;
         }
 
         WriteContentToFile(id, entity);
